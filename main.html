@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BMI 계산기</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="icon" href="icon.ico">
+    </head>
+    <body>
+        <div class="container">
+            <div class="input-section">
+                <h1>BMI 계산기</h1>
+                <div class="gender-selection">
+                    <button id="male" class="gender-button" onclick="selectGender('male')">남성</button>
+                    <button id="female" class="gender-button" onclick="selectGender('female')">여성</button>
+                </div>
+                <label for="height">키 (cm):</label>
+                <input type="number" id="height" placeholder="예: 175" required>
+                <label for="weight">몸무게 (kg):</label>
+                <input type="number" id="weight" placeholder="예: 70" required>
+                <div class="button-container">
+                    <button onclick="calculateBMI()">BMI 계산하기</button>
+                    <button onclick="resetFields()" class="reset-button">초기화</button>
+                </div>
+                <h2 id="result">값을 입력해주세요.</h2>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
